@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const AboutUs = () => {
     return (
-        <div>
+        <div className="wrapper">
             <nav className="bg-black text-white p-4">
                 <div className="max-w-5xl mx-auto flex justify-between items-center">
                     <div className="text-2xl font-bold">Logo</div>
@@ -49,6 +49,23 @@ const AboutUs = () => {
                     <p>&copy; 2023 Your Company. All rights reserved.</p>
                 </div>
             </footer>
+
+            <style jsx>{`
+                /* Add some styling to the wrapper to ensure it takes the full height of the viewport */
+                .wrapper {
+                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                /* Set the footer to be fixed at the bottom of the viewport */
+                footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                }
+            `}</style>
         </div>
     );
 };

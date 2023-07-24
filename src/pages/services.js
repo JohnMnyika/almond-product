@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Services = () => {
     return (
-        <div>
+        <div className="wrapper">
             <Head>
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
             </Head>
@@ -61,6 +61,23 @@ const Services = () => {
                     <p>&copy; 2023 Your Company. All rights reserved.</p>
                 </div>
             </footer>
+
+            <style jsx>{`
+                /* Add some styling to the wrapper to ensure it takes the full height of the viewport */
+                .wrapper {
+                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                /* Set the footer to be fixed at the bottom of the viewport */
+                footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                }
+            `}</style>
         </div>
     );
 };
