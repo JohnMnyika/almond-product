@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Contact = () => {
     return (
-        <div>
+        <div className="flex flex-col min-h-screen">
             <Head>
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
             </Head>
@@ -26,7 +26,7 @@ const Contact = () => {
                     <p className="text-xl">Have questions or want to get in touch? Reach out to us.</p>
                 </div>
             </header>
-            <section className="bg-white py-16">
+            <section className="bg-white py-16 flex-grow">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
