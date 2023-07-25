@@ -69,14 +69,7 @@ const Services = () => {
                     display: flex;
                     flex-direction: column;
                 }
-
-                /* Set the footer to be fixed at the bottom of the viewport */
-                footer {
-                    position: fixed;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                }
+                
             `}</style>
         </div>
     );
